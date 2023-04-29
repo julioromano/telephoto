@@ -255,69 +255,6 @@
 
   
   
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
-          Zoomable
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Zoomable" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Zoomable
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../zoomable/" class="md-nav__link">
-        Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../zoomable/recipes/" class="md-nav__link">
-        Recipes
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -327,17 +264,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
           Zoomable Image
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Zoomable Image" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Zoomable Image
         </label>
@@ -429,6 +366,69 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Modifier.zoomable()
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Modifier.zoomable()" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Modifier.zoomable()
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zoomable/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zoomable/recipes/" class="md-nav__link">
+        Recipes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -482,12 +482,14 @@
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nd">@Composable</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kd">private</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">ZoomableImageSource</span><span class="p">.</span><span class="nf">Companion</span><span class="p">.</span><span class="na">picasso</span><span class="p">(</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="n">model</span><span class="p">:</span><span class="w"> </span><span class="kt">Any?</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="n">picasso</span><span class="p">:</span><span class="w"> </span><span class="n">Picasso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Picasso</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">).</span><span class="na">build</span><span class="p">(),</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">):</span><span class="w"> </span><span class="n">ZoomableImageSource</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">remember</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">picasso</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="n">TODO</span><span class="p">(</span><span class="s">&quot;See ZoomableImageSource.coil() or glide() for an example.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">}</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="n">picasso</span><span class="p">:</span><span class="w"> </span><span class="n">Picasso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Picasso</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">(),</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">):</span><span class="w"> </span><span class="n">ZoomableImageSource</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">remember</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">picasso</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="n">TODO</span><span class="p">(</span><span class="s">&quot;See ZoomableImageSource.coil() or glide() for an example.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="p">}</span>
 </code></pre></div>
 <p><code>ZoomableImageSource.picasso()</code> will be responsible for loading an image and deciding whether it can be shown as-is or should be shown in a sub-sampling image viewer to avoid OOMs. Here are two examples:</p>
 <ul>
