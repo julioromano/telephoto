@@ -555,7 +555,7 @@
 
 
 <h1 id="zoomable-image">Zoomable Image<a class="headerlink" href="#zoomable-image" title="Permanent link">&para;</a></h1>
-<p>A <em>drop-in</em> replacement for async <code>Image()</code> composables with support for pan &amp; zoom gestures. For images that are large enough to not fit in memory, sub&#8209;sampling is automatically enabled so that they're displayed without any loss of detail when fully zoomed in.</p>
+<p>A <em>drop-in</em> replacement for async <code>Image()</code> composables featuring support for pan &amp; zoom gestures and automatic sub-sampling of large images. This ensures that images maintain their intricate details even when fully zoomed in, without causing any <code>OutOfMemory</code> exceptions.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Coil</label><label for="__tabbed_1_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -628,7 +628,7 @@
 </div>
 </div>
 <h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h3>
-<p>For images that are available in multiple resolutions, <code>telephoto</code> highly recommends using their lower resolutions as placeholders while their full quality equivalents are loaded in the background. </p>
+<p>If your images are available in multiple resolutions, <code>telephoto</code> highly recommends using their lower resolutions as placeholders while their full quality equivalents are loaded in the background.</p>
 <p>When combined with a cross-fade transition, <code>ZoomableImage</code> will smoothly swap out placeholders when their full quality versions are ready to be displayed.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Coil</label><label for="__tabbed_4_2">Glide</label></div>
 <div class="tabbed-content">
