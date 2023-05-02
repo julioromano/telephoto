@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://saket.github.io/telephoto/releasing/</loc>
+         <lastmod>2023-05-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://saket.github.io/telephoto/zoomable/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>

@@ -469,7 +469,7 @@
 <h1 id="sub-sampling">Sub-sampling<a class="headerlink" href="#sub-sampling" title="Permanent link">&para;</a></h1>
 <p>For displaying large images that can't fit into memory, <code>ZoomableImage</code> automatically divides them into tiles so that they can be loaded lazily.</p>
 <p>If <code>ZoomableImage</code> <ins>can't</ins> be used or if sub-sampling of images is always desired, you could potentially use <code>SubSamplingImage()</code> directly.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">&quot;me.saket.telephoto:sub-sampling-image:1.0.0-SNAPSHOT&quot;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">&quot;me.saket.telephoto:sub-sampling-image:1.0.0-alpha02&quot;</span><span class="o">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">zoomableState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">()</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">val</span><span class="w"> </span><span class="nv">imageState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberSubSamplingImageState</span><span class="p">(</span>
