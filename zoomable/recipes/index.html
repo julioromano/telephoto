@@ -522,23 +522,23 @@
 
   <h1>Recipes</h1>
 
-<h3 id="observing-pan-zoom">Observing pan &amp; zoom<a class="headerlink" href="#observing-pan-zoom" title="Permanent link">&para;</a></h3>
+<div><h3 id="observing-pan-zoom">Observing pan &amp; zoom<a class="headerlink" href="#observing-pan-zoom" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">()</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Box</span><span class="p">(</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="n">Modifier</span><span class="p">.</span><span class="na">zoomable</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">LaunchedEffect</span><span class="p">(</span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Pan = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">.</span><span class="na">offset</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Zoom = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">.</span><span class="na">scale</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Zoom percent = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">zoomFraction</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">100</span><span class="si">}</span><span class="s">%&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">"Pan = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">.</span><span class="na">offset</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">"Zoom = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">.</span><span class="na">scale</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">"Zoom percent = </span><span class="si">${</span><span class="n">state</span><span class="p">.</span><span class="na">zoomFraction</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">100</span><span class="si">}</span><span class="s">%"</span><span class="p">)</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1">// Example use case: Hide system bars when image is zoomed in.</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kd">val</span><span class="w"> </span><span class="nv">systemUiController</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberSystemUiController</span><span class="p">()</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">systemUiController</span><span class="p">.</span><span class="na">isSystemBarsVisible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="na">zoomFraction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0f</span>
 </code></pre></div>
-<h3 id="resetting-zoom">Resetting zoom<a class="headerlink" href="#resetting-zoom" title="Permanent link">&para;</a></h3>
+<h3 id="resetting-zoom">Resetting zoom<a class="headerlink" href="#resetting-zoom" title="Permanent link">¶</a></h3>
 <p><code>Modifier.zoomable()</code> will automatically retain its pan &amp; zoom across state restorations. You may want to prevent this in lazy layouts such as a <code>Pager()</code>, where each page is restored every time it becomes visible. </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">pagerState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberPagerState</span><span class="p">()</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">HorizontalPager</span><span class="p">(</span>
@@ -562,7 +562,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>A bug in <code>Pager()</code> previously caused <code>settledPage</code> to reset to <code>0</code> upon state restoration. This issue has been resolved in version <code>1.5.0-alpha02</code>.</p>
-</div>
+</div></div>
 
 
 

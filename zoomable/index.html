@@ -432,8 +432,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preventing-over-zoom" class="md-nav__link">
-    Preventing over-zoom
+  <a href="#edge-detection" class="md-nav__link">
+    Edge detection
   </a>
   
 </li>
@@ -510,8 +510,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preventing-over-zoom" class="md-nav__link">
-    Preventing over-zoom
+  <a href="#edge-detection" class="md-nav__link">
+    Edge detection
   </a>
   
 </li>
@@ -542,7 +542,7 @@
 
 
 
-<h1 id="modifierzoomable">Modifier.zoomable()<a class="headerlink" href="#modifierzoomable" title="Permanent link">&para;</a></h1>
+<div><h1 id="modifierzoomable">Modifier.zoomable()<a class="headerlink" href="#modifierzoomable" title="Permanent link">¶</a></h1>
 <p>A <code>Modifier</code> for handling pan &amp; zoom gestures, designed to be shared across all your media composables so that your users can use the same familiar gestures throughout your app. It offers,</p>
 <ul>
 <li>Pinch to zoom and flings</li>
@@ -552,7 +552,7 @@
 <li>Compatibility with nested scrolling</li>
 <li>Click listeners</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">&quot;me.saket.telephoto:zoomable:1.0.0-alpha02&quot;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">"me.saket.telephoto:zoomable:1.0.0-alpha02"</span><span class="o">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Box</span><span class="p">(</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">Modifier</span>
@@ -565,7 +565,7 @@
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">)</span>
 </code></pre></div>
 <p>While <code>Modifier.zoomable()</code> was primarily written with images &amp; videos in mind, it can be used for anything such as text, canvas drawings, etc.</p>
-<h3 id="click-listeners">Click listeners<a class="headerlink" href="#click-listeners" title="Permanent link">&para;</a></h3>
+<h3 id="click-listeners">Click listeners<a class="headerlink" href="#click-listeners" title="Permanent link">¶</a></h3>
 <p>For detecting double taps, <code>Modifier.zoomable()</code> consumes all tap gestures making it incompatible with <code>Modifier.clickable()</code> and <code>Modifier.combinedClickable()</code>. As an alternative, its <code>onClick</code> and <code>onLongClick</code> parameters can be used.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Modifier</span><span class="p">.</span><span class="na">zoomable</span><span class="p">(</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">(),</span>
@@ -573,7 +573,7 @@
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="n">onLongClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">)</span>
 </code></pre></div>
-<h3 id="preventing-over-zoom">Preventing over-zoom<a class="headerlink" href="#preventing-over-zoom" title="Permanent link">&para;</a></h3>
+<h3 id="edge-detection">Edge detection<a class="headerlink" href="#edge-detection" title="Permanent link">¶</a></h3>
 <p>For preventing your content from over-zooming or over-panning, <code>Modifier.zoomable()</code> will use your content's layout size by default. This is good enough for composables that fill <em>every</em> pixel of their drawing space.</p>
 <p>For richer content such as an <code>Image()</code> whose <em>visual</em> size may not always match its layout size, <code>Modifier.zoomable()</code> will need your assistance.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">()</span>
@@ -595,7 +595,7 @@
 <a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="n">alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Alignment</span><span class="p">.</span><span class="na">Center</span><span class="p">,</span>
 <a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="p">)</span>
 </code></pre></div>
-<h3 id="applying-gesture-transformations">Applying gesture transformations<a class="headerlink" href="#applying-gesture-transformations" title="Permanent link">&para;</a></h3>
+<h3 id="applying-gesture-transformations">Applying gesture transformations<a class="headerlink" href="#applying-gesture-transformations" title="Permanent link">¶</a></h3>
 <p>When pan &amp; zoom gestures are received, <code>Modifier.zoomable()</code> automatically applies their resulting <code>scale</code> and <code>translation</code> onto your content using <code>Modifier.graphicsLayer()</code>. </p>
 <p>This can be disabled if your content prefers applying the transformations in a bespoke manner.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">(</span>
@@ -606,7 +606,7 @@
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span>
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="p">.</span><span class="na">fillMaxSize</span><span class="p">()</span>
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p">.</span><span class="na">zoomable</span><span class="p">(</span><span class="n">state</span><span class="p">),</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Nicolas Cage&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Nicolas Cage"</span><span class="p">,</span>
 <a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="hll"><span class="w">  </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="na">contentTransformation</span><span class="p">.</span><span class="na">let</span><span class="w"> </span><span class="p">{</span>
 </span><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="hll"><span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">weightMultiplier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">it</span><span class="p">.</span><span class="na">isUnspecified</span><span class="p">)</span><span class="w"> </span><span class="m">1f</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">scale</span><span class="p">.</span><span class="na">scaleX</span>
 </span><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="n">TextStyle</span><span class="p">(</span>
@@ -615,7 +615,7 @@
 <a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="p">)</span>
 <a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></div>
 
 
 

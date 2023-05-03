@@ -466,7 +466,7 @@
 
 
 
-<h1 id="custom-image-loaders">Custom image loaders<a class="headerlink" href="#custom-image-loaders" title="Permanent link">&para;</a></h1>
+<div><h1 id="custom-image-loaders">Custom image loaders<a class="headerlink" href="#custom-image-loaders" title="Permanent link">¶</a></h1>
 <p>In its essence, <code>ZoomableImage</code> is simply an abstraction over an image loading library. If your preferred library isn't supported by <code>telephoto</code> out of the box, you can create your own by extending <code>ZoomableImageSource</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@Composable</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">fun</span><span class="w"> </span><span class="nf">ZoomablePicassoImage</span><span class="p">(</span>
@@ -487,7 +487,7 @@
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">(),</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">):</span><span class="w"> </span><span class="n">ZoomableImageSource</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">remember</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">picasso</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="n">TODO</span><span class="p">(</span><span class="s">&quot;See ZoomableImageSource.coil() or glide() for an example.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="n">TODO</span><span class="p">(</span><span class="s">"See ZoomableImageSource.coil() or glide() for an example."</span><span class="p">)</span>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="p">}</span>
 </code></pre></div>
@@ -495,7 +495,7 @@
 <ul>
 <li><a href="https://github.com/saket/telephoto/blob/trunk/zoomable-image/coil/src/main/kotlin/me/saket/telephoto/zoomable/coil/CoilImageSource.kt">CoilImageSource</a></li>
 <li><a href="https://github.com/saket/telephoto/blob/25072f96ed47871cf827dd9d255edb552b24044e/zoomable-image/glide/src/main/kotlin/me/saket/telephoto/zoomable/glide/GlideImageSource.kt">GlideImageSource</a></li>
-</ul>
+</ul></div>
 
 
 

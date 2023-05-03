@@ -556,35 +556,28 @@
 
 
 
-<h1 id="zoomable-image">Zoomable Image<a class="headerlink" href="#zoomable-image" title="Permanent link">&para;</a></h1>
-<div class="md-video-container">
-  <a href="../assets/demo_full.mp4">
-    <video muted autoplay loop controls style="width: 230px; height: 498px;">
-      <source type="video/mp4" src="../assets/demo_small.mp4">
-    </video>
-  </a>
-</div>
-
+<div><h1 id="zoomable-image">Zoomable Image<a class="headerlink" href="#zoomable-image" title="Permanent link">¶</a></h1>
+<p><div class="video-container"><video style="width:100%;height:33.172vw" loop muted autoplay alt="type:video"><source src="../assets/demo_small.mp4" type="video/mp4"></source></video></div></p>
 <p>A <em>drop-in</em> replacement for async <code>Image()</code> composables featuring support for pan &amp; zoom gestures and automatic sub-sampling of large images. This ensures that images maintain their intricate details even when fully zoomed in, without causing any <code>OutOfMemory</code> exceptions.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Coil</label><label for="__tabbed_1_2">Glide</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Coil</label><label for="__tabbed_1_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">&quot;me.saket.telephoto:zoomable-image-coil:1.0.0-alpha02&quot;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">"me.saket.telephoto:zoomable-image-coil:1.0.0-alpha02"</span><span class="o">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">&quot;me.saket.telephoto:zoomable-image-glide:1.0.0-alpha02&quot;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">implementation</span><span class="o">(</span><span class="s2">"me.saket.telephoto:zoomable-image-glide:1.0.0-alpha02"</span><span class="o">)</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <!-- Invisible separator for tabbed code blocks -->
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Coil</label><label for="__tabbed_2_2">Glide</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Coil</label><label for="__tabbed_2_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gd">- AsyncImage(</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="gi">+ ZoomableAsyncImage(</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w"> </span>   model = &quot;https://example.com/image.jpg&quot;,
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w"> </span>   model = "https://example.com/image.jpg",
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w"> </span>   contentDescription = …
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w"> </span> )
 </code></pre></div>
@@ -592,21 +585,21 @@
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gd">- GlideImage(</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="gi">+ ZoomableGlideImage(</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w"> </span>   model = &quot;https://example.com/image.jpg&quot;,
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w"> </span>   model = "https://example.com/image.jpg",
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w"> </span>   contentDescription = …
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w"> </span> )
 </code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="image-requests">Image requests<a class="headerlink" href="#image-requests" title="Permanent link">&para;</a></h3>
+<h3 id="image-requests">Image requests<a class="headerlink" href="#image-requests" title="Permanent link">¶</a></h3>
 <p>For complex scenarios, the <code>model</code> parameter can take full image requests. </p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Coil</label><label for="__tabbed_3_2">Glide</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Coil</label><label for="__tabbed_3_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ZoomableAsyncImage</span><span class="p">(</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ImageRequest</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">)</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">.</span><span class="na">data</span><span class="p">(</span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">.</span><span class="na">data</span><span class="p">(</span><span class="s">"https://example.com/image.jpg"</span><span class="p">)</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">.</span><span class="na">listener</span><span class="p">(</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="n">onSuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span><span class="n">onError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">}</span>
@@ -622,7 +615,7 @@
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ZoomableGlideImage</span><span class="p">(</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Glide</span><span class="p">.</span><span class="na">with</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">)</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">.</span><span class="na">load</span><span class="p">(</span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">.</span><span class="na">load</span><span class="p">(</span><span class="s">"https://example.com/image.jpg"</span><span class="p">)</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p">.</span><span class="na">addListener</span><span class="p">(</span><span class="k">object</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">RequestListener</span><span class="o">&lt;</span><span class="n">Drawable</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">      </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onResourceReady</span><span class="p">(</span><span class="err">…</span><span class="p">):</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TODO</span><span class="p">()</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">      </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onLoadFailed</span><span class="p">(</span><span class="err">…</span><span class="p">):</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TODO</span><span class="p">()</span>
@@ -637,46 +630,46 @@
 </div>
 </div>
 </div>
-<h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h3>
+<h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">¶</a></h3>
 <p>If your images are available in multiple resolutions, <code>telephoto</code> highly recommends using their lower resolutions as placeholders while their full quality equivalents are loaded in the background.</p>
 <p>When combined with a cross-fade transition, <code>ZoomableImage</code> will smoothly swap out placeholders when their full quality versions are ready to be displayed.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Coil</label><label for="__tabbed_4_2">Glide</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Coil</label><label for="__tabbed_4_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">ZoomableAsyncImage</span><span class="p">(</span>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">ZoomableAsyncImage</span><span class="p">(</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">fillMaxSize</span><span class="p">(),</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ImageRequest</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">)</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">.</span><span class="na">data</span><span class="p">(</span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">.</span><span class="na">data</span><span class="p">(</span><span class="s">"https://example.com/image.jpg"</span><span class="p">)</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">placeholderMemoryCacheKey</span><span class="p">(</span><span class="err">…</span><span class="p">)</span>
-</span><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">crossfade</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>
+</span><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">crossfade</span><span class="p">(</span><span class="m">1</span><span class="n">_000</span><span class="p">)</span>
 </span><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">(),</span>
 <a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="n">contentDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">…</span>
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">)</span>
 </code></pre></div>
-More details about <code>placeholderMemoryCacheKey()</code> can be found on <a href="https://coil-kt.github.io/coil/recipes/#using-a-memory-cache-key-as-a-placeholder">Coil's website</a>.</p>
+More details about <code>placeholderMemoryCacheKey()</code> can be found on <a href="https://coil-kt.github.io/coil/recipes/#using-a-memory-cache-key-as-a-placeholder">Coil's website</a>.
 </div>
 <div class="tabbed-block">
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">ZoomableGlideImage</span><span class="p">(</span>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">ZoomableGlideImage</span><span class="p">(</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">fillMaxSize</span><span class="p">(),</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Glide</span><span class="p">.</span><span class="na">with</span><span class="p">(</span><span class="n">LocalContext</span><span class="p">.</span><span class="na">current</span><span class="p">)</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p">.</span><span class="na">load</span><span class="p">(</span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p">.</span><span class="na">load</span><span class="p">(</span><span class="s">"https://example.com/image.jpg"</span><span class="p">)</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">thumbnail</span><span class="p">(</span><span class="err">…</span><span class="p">)</span><span class="w">   </span><span class="c1">// or placeholder()</span>
-</span><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">transition</span><span class="p">(</span><span class="n">withCrossFade</span><span class="p">(</span><span class="m">1000</span><span class="p">)),</span>
+</span><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="hll"><span class="w">    </span><span class="p">.</span><span class="na">transition</span><span class="p">(</span><span class="n">withCrossFade</span><span class="p">(</span><span class="m">1</span><span class="n">_000</span><span class="p">)),</span>
 </span><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="n">contentDescription</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">…</span>
 <a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">)</span>
 </code></pre></div>
-More details about <code>thumbnail()</code> can be found on <a href="https://bumptech.github.io/glide/doc/options.html#thumbnail-requests">Glide's website</a>.</p>
+More details about <code>thumbnail()</code> can be found on <a href="https://bumptech.github.io/glide/doc/options.html#thumbnail-requests">Glide's website</a>.
 </div>
 </div>
 </div>
-<h3 id="click-listeners">Click listeners<a class="headerlink" href="#click-listeners" title="Permanent link">&para;</a></h3>
-<p>For detecting double taps, <code>Modifier.zoomable()</code> consumes all tap gestures making it incompatible with <code>Modifier.clickable()</code> and <code>Modifier.combinedClickable()</code>. As an alternative, its <code>onClick</code> and <code>onLongClick</code> parameters can be used.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Coil</label><label for="__tabbed_5_2">Glide</label></div>
+<h3 id="click-listeners">Click listeners<a class="headerlink" href="#click-listeners" title="Permanent link">¶</a></h3>
+<p>For detecting double taps, <code>ZoomableImage</code> consumes all tap gestures making it incompatible with <code>Modifier.clickable()</code> and <code>Modifier.combinedClickable()</code>. As an alternative, its <code>onClick</code> and <code>onLongClick</code> parameters can be used.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Coil</label><label for="__tabbed_5_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">ZoomableAsyncImage</span><span class="p">(</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">clickable</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">error</span><span class="p">(</span><span class="s">&quot;This will not work&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">clickable</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">error</span><span class="p">(</span><span class="s">"This will not work"</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://example.com/image.jpg"</span><span class="p">,</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="n">onClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="n">onLongClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">)</span>
@@ -684,8 +677,8 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">ZoomableGlideImage</span><span class="p">(</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">clickable</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">error</span><span class="p">(</span><span class="s">&quot;This will not work&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://example.com/image.jpg&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">clickable</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">error</span><span class="p">(</span><span class="s">"This will not work"</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://example.com/image.jpg"</span><span class="p">,</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="n">onClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="n">onLongClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">…</span><span class="w"> </span><span class="p">},</span>
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">)</span>
@@ -693,9 +686,9 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </div>
 </div>
 </div>
-<h3 id="sharing-hoisted-state">Sharing hoisted state<a class="headerlink" href="#sharing-hoisted-state" title="Permanent link">&para;</a></h3>
+<h3 id="sharing-hoisted-state">Sharing hoisted state<a class="headerlink" href="#sharing-hoisted-state" title="Permanent link">¶</a></h3>
 <p>For handling zoom gestures, <code>Zoomablemage</code> uses <a href="../zoomable/"><code>Modifier.zoomable()</code></a> underneath. If your app displays different kinds of media, it is recommended to hoist the <code>ZoomableState</code> outside so that it can be shared with all zoomable composables:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Coil</label><label for="__tabbed_6_2">Glide</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Coil</label><label for="__tabbed_6_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">zoomableState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rememberZoomableState</span><span class="p">()</span>
@@ -736,7 +729,7 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </code></pre></div>
 </div>
 </div>
-</div>
+</div></div>
 
 
 
