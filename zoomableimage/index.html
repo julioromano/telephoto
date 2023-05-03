@@ -644,9 +644,8 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </div>
 </div>
 <h3 id="content-scale">Content scale<a class="headerlink" href="#content-scale" title="Permanent link">¶</a></h3>
-<p>Unlike <code>Image()</code>, cropped images can be panned in <code>ZoomableImage</code>.</p>
-<p>Images are scaled using <code>ContentScale.Fit</code> by default. This is good enough for media viewers, but can be changed to any other <code>ContentScale</code>. For example, a wallpaper app may want to use <code>ContentScale.Crop</code> to stretch images to fill all available space. </p>
-<p>When images are cropped, you'll still be able to move them around.</p>
+<p>Images are scaled using <code>ContentScale.Fit</code> by default, but can be customized. A visual guide of all possible values can be found <a href="https://developer.android.com/jetpack/compose/graphics/images/customize#content-scale">here</a>. </p>
+<p>Unlike <code>Image()</code>, <code>ZoomableImage</code> can pan images even when they're cropped. This can be useful for applications like wallpaper apps that may want to use <code>ContentScale.Crop</code> to ensure that images always fill the screen.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Coil</label><label for="__tabbed_6_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
