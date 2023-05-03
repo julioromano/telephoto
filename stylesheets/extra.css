@@ -53,9 +53,27 @@
 
 .md-typeset video {
   background: var(--md-video-bg-color);
-  border: 0.1em solid var(--md-code-border-color);
+  outline: 0.1em solid var(--md-code-border-color);
   border-radius: 0.3rem;
 }
+
+table {
+  font-size: 1em !important;
+}
+
+/*
+ * Reduce the main column's width because it looks too
+ * wide with the right sidebar (table of contents) hidden.
+ */
+.md-grid {
+  max-width: 50rem;
+}
+@media screen and (min-width: 76.25em) {
+  .md-content__inner {
+    margin-right: 2rem;
+  }
+}
+
 
 [data-md-color-scheme="default"] {
   --md-header-bg-color: #DAE6CB;
