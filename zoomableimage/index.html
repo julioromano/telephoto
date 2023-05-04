@@ -608,21 +608,21 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </div>
 </div>
 <h3 id="content-alignment">Content alignment<a class="headerlink" href="#content-alignment" title="Permanent link">¶</a></h3>
-<p>When images are zoomed, they're scaled with respect to their <code>alignment</code> until they're large enough to fill all available space. After that, they're scaled uniformly. The default <code>alignment</code> is <code>Alignment.Center</code>.</p>
 <table>
 <thead>
 <tr>
-<th align="center"><code>Alignment.TopCenter</code></th>
-<th align="center"><code>Alignment.BottomCenter</code></th>
+<th align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/alignment_top_small.mp4" type="video/mp4"></source></video></div></th>
+<th align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/alignment_bottom_small.mp4" type="video/mp4"></source></video></div></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/alignment_top_small.mp4" type="video/mp4"></source></video></div></td>
-<td align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/alignment_bottom_small.mp4" type="video/mp4"></source></video></div></td>
+<td align="center"><code>Alignment.TopCenter</code></td>
+<td align="center"><code>Alignment.BottomCenter</code></td>
 </tr>
 </tbody>
 </table>
+<p>When images are zoomed, they're scaled with respect to their <code>alignment</code> until they're large enough to fill all available space. After that, they're scaled uniformly. The default <code>alignment</code> is <code>Alignment.Center</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Coil</label><label for="__tabbed_5_2">Glide</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -644,7 +644,21 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </div>
 </div>
 <h3 id="content-scale">Content scale<a class="headerlink" href="#content-scale" title="Permanent link">¶</a></h3>
-<p>Images are scaled using <code>ContentScale.Fit</code> by default, but can be customized. A visual guide of all possible values can be found <a href="https://developer.android.com/jetpack/compose/graphics/images/customize#content-scale">here</a>. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/scale_inside_small.mp4" type="video/mp4"></source></video></div></th>
+<th align="center"><div class="video-container"><video style="width:100%;height:30rem" loop muted autoplay alt="type:video"><source src="../assets/scale_crop_small.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>ContentScale.Inside</code></td>
+<td align="center"><code>ContentScale.Crop</code></td>
+</tr>
+</tbody>
+</table>
+<p>Images are scaled using <code>ContentScale.Fit</code> by default, but can be customized. A visual guide of all possible values can be found <a href="https://developer.android.com/jetpack/compose/graphics/images/customize#content-scale">here</a>.</p>
 <p>Unlike <code>Image()</code>, <code>ZoomableImage</code> can pan images even when they're cropped. This can be useful for applications like wallpaper apps that may want to use <code>ContentScale.Crop</code> to ensure that images always fill the screen.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Coil</label><label for="__tabbed_6_2">Glide</label></div>
 <div class="tabbed-content">
@@ -665,6 +679,10 @@ More details about <code>thumbnail()</code> can be found on <a href="https://bum
 </code></pre></div>
 </div>
 </div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Placeholders are visually incompatible with <code>ContentScale.Inside</code>.</p>
 </div>
 <h3 id="click-listeners">Click listeners<a class="headerlink" href="#click-listeners" title="Permanent link">¶</a></h3>
 <p>For detecting double taps, <code>ZoomableImage</code> consumes all tap gestures making it incompatible with <code>Modifier.clickable()</code> and <code>Modifier.combinedClickable()</code>. As an alternative, its <code>onClick</code> and <code>onLongClick</code> parameters can be used.</p>
