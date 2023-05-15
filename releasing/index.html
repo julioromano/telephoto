@@ -431,10 +431,15 @@
 <li>Commit <code>Prepare to release vX.X.X</code>. DO NOT PUSH YET.</li>
 <li>Upload archives to maven.
   <code>g clean publish --no-parallel --no-daemon</code></li>
+<li>Wait for artifacts to be available.
+  <code>dependency-watch await me.saket.telephoto:zoomable:0.1.0</code></li>
 <li>Ensure that the release is available on maven by using it <code>:sample</code></li>
-<li>Run the sample app and ensure everything works. Telephoto has some test cases that aren't automated and must be manually tested:</li>
-<li>When a fling animation is ongoing, tapping anywhere stops the animation.</li>
+<li>Run the sample app and ensure everything works. </li>
+<li>Run manual test cases that are difficult to automate:</li>
+<li>Fling animations can be interrupted by pressing anywhere.</li>
+<li>Double-tap-to-zoom animations can be interrupted <strong>only</strong> by starting another swipe gesture. </li>
 <li>Push commit.</li>
+<li>Deploy changes to project website</li>
 <li>Generate a sample APK.</li>
 <li>Draft a changelog.</li>
 <li>Make a release on Github.</li>
